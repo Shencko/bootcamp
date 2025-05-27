@@ -1,0 +1,155 @@
+html{
+    font-family: 'Open Sans' sans-serif;
+}
+body {
+    background-color: #bcc5d3;
+    margin: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/*body {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIGRZp1IKCx_mu9r90aSabtPikmCOkfLB9Yg&s");
+    background-position:initial;
+    background-size:cover;
+    background-size: top;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #d6bfff;
+}
+*/
+
+h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #a3cfff
+}
+h2, h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    /*border-bottom: 2px solid #3498db;*/
+    padding-bottom: 5px;
+    color: #34495e;
+}
+
+.pro-tab{
+    width: 20%;
+    margin: 10px 15px;
+    border-collapse: collapse;
+    border-color: cornflowerblue;
+    border-style: solid;
+}
+.pro-tab thead{
+    background-color: cornsilk;
+    color: darkgray;
+}
+.pro-tab th, .pro-tab td {
+    padding: 10px 5px;
+    text-align: center;
+    
+}
+.pro-tab tbody  tr:hover {
+    background-color: gray; 
+}
+
+.none {
+    background-color: #269aff;
+    color: cornsilk;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1px 2;
+
+}
+
+
+
+#close-part {
+    color: rgb(24, 80, 233);
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column-reverse;
+}
+/*#close-2 {
+    color: white;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+}
+*/
+
+a {
+    text-decoration-line: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+
+.image-box {
+    gap: 15px; 
+    margin: 5px 25px;
+    display: flex;
+    
+  
+}
+
+.image-box img {
+  max-width: 45%;  
+  height: auto;
+  border: 2px solid #333; 
+  border-radius: 5px; 
+} 
+/*
+button:hover {
+    background-color: #2980b9;
+}
+*/
+
+image-box {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+nav{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul, li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    h4{
+        font-size: 0.8em;
+        color: brown;
+    }
+    nav, nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+    h4{
+        font-size: 0.6em;
+        color: chartreuse;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
