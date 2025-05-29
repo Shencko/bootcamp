@@ -11,6 +11,7 @@ body {
     padding: 20px;
     max-width: 900px;
     margin: auto;
+    text-align: justify;
 }
 
 header {
@@ -211,6 +212,82 @@ button[type="submit"]:focus {
     background-color: #9ccbf9;
 }
 
+.animation {
+    margin-top: 2.1em;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    border: 3px solid #003087;
+    animation: thanks 8s ease-in-out alternate infinite;
+    position: relative;
+}
+
+@keyframes thanks {
+    0% {
+        transform: translateX(0) rotate(-45deg);
+        background-color: #001f4d;
+        border-radius: 50%;
+    }
+
+    50% {
+        border-radius: 3%;
+    }
+
+    100% {
+        transform: translateX(144px) rotate(45deg);
+        background-color: #9ccbf9;
+        border-radius: 70%;
+    }
+}
+
+.animation p {
+    width: 100%;
+    height: 100%;
+    color: #9ccbf9;
+    align-content: center;
+    text-align: center;
+    font-size: 2em;
+    animation: thanksText 8s ease-in-out alternate infinite;
+}
+
+.animation p:hover {
+    text-decoration: underline;
+}
+
+@keyframes thanksText {
+    0% {
+        color: #9ccbf9;
+    }
+
+    50% {
+        color: #0056b3;
+    }
+
+    100% {
+        color: #001f4d;
+    }
+}
+
+.quote {
+    font-style: italic;
+    border-left: 4px solid #003087;
+    padding-left: 1em;
+    margin: 2em 0;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 1.2em 1.5em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.quote p {
+    margin: 0 0 1em 0;
+    line-height: 1.6;
+}
+
+.quote p:last-child {
+    margin-bottom: 0;
+}
 
 footer {
     margin-top: 40px;
@@ -221,17 +298,37 @@ footer {
     border-radius: 6px;
 }
 
-footer p,
+footer section {
+    margin-bottom: 1.5em;
+}
+
+footer p {
+    margin: 0.3em 0;
+}
+
 footer a {
     color: #eee;
     font-size: 0.9rem;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .bonus {
+    padding: 7px;
+    background-color: #9ccbf9;
+    transition: 0.3s ease-in-out;
+    border-radius: 12px;
+}
+
+footer .bonus:hover {
+    background-color: #004a99;
 }
 
 footer a:hover,
 footer a:focus {
     text-decoration: underline;
     outline: none;
+    color: #9ccbf9;
 }
 
 footer ul {
@@ -240,15 +337,16 @@ footer ul {
     margin: 12px 0 18px;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 1.2em;
 }
 
 footer ul li a {
     color: #eee;
     font-weight: 500;
+    font-size: 0.85rem;
 }
 
-/* Responsividad */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -268,5 +366,15 @@ footer ul li a {
     .pro-tab td {
         font-size: 0.8rem;
         padding: 8px 6px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8em;
+    }
+
+    footer section {
+        margin-bottom: 1.2em;
     }
 }
