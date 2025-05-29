@@ -10,71 +10,103 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>Premier League</h1>
-        <hr>
-        <h2>Top News</h2>
-        <p> <button><a href="https://www.premierleague.com/">Latest</a> </button> <button><a
-                    href="https://www.premierleague.com/results">Matches</a></button></p>
-        <span><a href="https://www.premierleague.com/news/4308579"><b>Newcastle the big winners of dramatic day in
-                    top-five race</b></a></span>
-        <p><strong>Alex keble reflects on what may be a defining Sunday in quest for the Champions League
-                qualification.</strong></p>
-        <hr>
-        <div class="image-box">
-            <img src="https://resources.premierleague.pulselive.com/photo-resources/2025/05/11/32314224-19a5-4ee1-b03b-c12217dc00fe/FotoJet-2025-05-11T210806.439.jpg?width=200&height=200"
-                alt="top four race">
-            <img src="https://resources.premierleague.pulselive.com/photo-resources/2025/05/11/a026d685-4e52-4bc4-9913-36577d37bd0e/2214514866.jpg?width=200&height=200"
-                alt="nightmare for Amorin">
-        </div>
-        <br>
-        <button>trending news</button>
-        <br>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.premierleague.com/" target="_blank">Latest</a>
+                </li>
+                <li>
+                    <a href="https://www.premierleague.com/results" target="_blank">Matches</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <span><a href="https://www.premierleague.com/news/4308650">Slot: A lot of fans were happy with Trent,
-                some
-                were not</a></span>
-        <br>
-        <span><a href="https://www.premierleague.com/news/4308694">Amorim hints at Man Utd exit if he cannot
-                solve problems.</a> </span>
+    <hr>
 
-        <hr>
-        <br>
-
+    <main>
         <section>
-            <span>Who will claim the UCL Spot?</span>
-            <div>
-                <input type="radio" name="club" id="M" value="manchester" checked>
-                <label for="M">Manchester City</label>
-            </div>
-            <div>
-                <input type="radio" name="club" id="C" value="london">
-                <label for="C">Chelsea FC</label>
-            </div>
-            <div>
-                <input type="radio" name="club" id="V" value="villa">
-                <label for="V">Aston Villa</label>
-            </div>
-            <div>
-                <input type="radio" name="club" id="N" value="nottingham">
-                <label for="N">Nottingham Forest</label>
-            </div>
+            <h2>Top News</h2>
+            <p>
+                Newcastle the big winners of dramatic day in top-five race.
+                <a href="https://www.premierleague.com/news/4308579" target="_blank">Read the article here.</a>
+            </p>
+            <p>
+                <b>
+                    Alex keble reflects on what may be a defining Sunday in quest for the
+                    Champions League qualification.
+                </b>
+            </p>
         </section>
 
         <hr>
-        <h3>Fantasy Premier League</h3>
+
+    <section class="img">
+        <article class="images-row">
+            <figure class="image-box">
+                <img src="https://resources.premierleague.pulselive.com/photo-resources/2025/05/11/32314224-19a5-4ee1-b03b-c12217dc00fe/FotoJet-2025-05-11T210806.439.jpg?width=200&height=200" alt="top four race">
+                <figcaption>Stats</figcaption>
+            </figure>
+            <figure>
+                <img src="https://resources.premierleague.pulselive.com/photo-resources/2025/05/11/a026d685-4e52-4bc4-9913-36577d37bd0e/2214514866.jpg?width=200&height=200" alt="nightmare for Amorin">
+                <figcaption>Amorim</figcaption>
+            </figure>
+        </article>
+
+        <h3 class="img-subtitle">Trending News</h3>
+        <p>
+            Slot: A lot of fans were happy with Trent, some were not.
+            <a href="https://www.premierleague.com/news/4308650" target="_blank">Read the article here.</a>
+        </p>
+        <p>
+            Amorim hints at Man Utd exit if he cannot solve problems.
+            <a href="https://www.premierleague.com/news/4308694" target="_blank">Read the article here.</a>
+        </p>
+    </section>
+
+        <hr>
+
+        <section>
+            <form action="form.html" method="post">
+                <fieldset>
+                    <legend>Who will claim the UCL Spot?</legend>
+                    <div>
+                        <input type="radio" name="club" id="M" value="manchester" checked>
+                        <label for="M">Manchester City</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="club" id="C" value="chelsea">
+                        <label for="C">Chelsea FC</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="club" id="V" value="villa">
+                        <label for="V">Aston Villa</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="club" id="N" value="nottingham">
+                        <label for="N">Nottingham Forest</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+        <!-- <h3>Fantasy Premier League</h3>
         <span>GW 37 Transfer Deadline</span>
         <p><a href="fantasy.html"><button class="none">Pick Your Team</button></a></p>
-        <hr>
+        <hr> -->
         <section>
-            <h3>Fan's choice of the week</h3>
-            <form action="/premierleague">
-                <label for="Favorite club">Favorite club</label>
-                <select name="club" id="Enter club name">
-                    <option value="">please choose a club</option>
+            <h2>Fan's choice of the week</h2>
+            <form action="form.html" method="post">
+                <label for="club-select">Favorite club</label>
+                <select name="club" id="club-select" required>
+                    <option value="">Please choose a club</option>
                     <option value="Liverpool">Liverpool</option>
                     <option value="Arsenal">Arsenal</option>
-                    <option value="Man city">Man city</option>
+                    <option value="Man city">Man City</option>
                     <option value="Newcastle">Newcastle</option>
                     <option value="Chelsea">Chelsea</option>
                     <option value="Aston Villa">Aston Villa</option>
@@ -83,35 +115,29 @@
                     <option value="Bournemouth">Bournemouth</option>
                     <option value="Fulham">Fulham</option>
                     <option value="Brighton">Brighton</option>
-
                 </select>
-                <p>
-                    <label for="fans comments">comment</label>
-                    <br>
-                    <textarea name="comment " id="Contribution" cols="20" rows="10"></textarea>
-                </p>
-                <button> <a href="bonus.html">Submit</a></button>
+                <div>
+                    <label for="comment">Comment</label><br>
+                    <textarea name="comment" id="comment" cols="21" rows="5" placeholder="Share your thoughts..."></textarea>
+                </div>
+                <button type="submit">Submit</button>
             </form>
         </section>
-        <br>
-        <br>
 
-        <div>
-            <button class="none">
-                <h4>Premier League claims fifth UEFA Champions League Spot</h4>
-            </button>
-        </div>
         <section>
+            <h2>Premier League claims fifth UEFA Champions League Spot</h2>
             <table class="pro-tab">
                 <thead>
-                    <th>Pos</th>
-                    <th rowspan="2">Club</th>
-                    <th rowspan="2">PL</th>
-                    <th rowspan="2">W</th>
-                    <th rowspan="2">D</th>
-                    <th rowspan="2">L</th>
-                    <th rowspan="2">GD</th>
-                    <th rowspan="2">Pts</th>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Club</th>
+                        <th>PL</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -135,7 +161,7 @@
                         <td>68</td>
                     </tr>
                     <tr>
-                        <td>3</td>
+                    <td>3</td>
                         <td>NEW</td>
                         <td>36</td>
                         <td>20</td>
@@ -280,7 +306,7 @@
                         <td>36</td>
                         <td>11</td>
                         <td>5</td>
-                        <td>120</td>
+                        <td>12</td>
                         <td>4</td>
                         <td>38</td>
                     </tr>
@@ -317,26 +343,36 @@
                 </tbody>
             </table>
         </section>
-
     </main>
+
     <footer>
-        <nav>
-            <h4><a href="https://www.premierleague.com">PREMIER LEAGUE 2025<sup>&#174;</sup></a></h4>
+        <nav aria-label="Footer Navigation">
+            <p>
+                <a href="https://www.premierleague.com" target="_blank" rel="noopener noreferrer">
+                    PREMIER LEAGUE 2025<sup>&#174;</sup>
+                </a>
+            </p>
             <ul>
                 <li>
-                    <a href="https://www.premierleague.com/modern-slavery-statement">Modern Slavery Statement.</a>
+                    <a href="https://www.premierleague.com/modern-slavery-statement" target="_blank" rel="noopener noreferrer">
+                    Modern Slavery Statement
+                    </a>
                 </li>
                 <li>
-                    <a href="https://www.premierleague.com/terms-and-conditions">Terms & Condition, Cookies Policy.</a>
+                    <a href="https://www.premierleague.com/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+                    Terms & Conditions, Cookies Policy
+                    </a>
                 </li>
                 <li>
-                    <a href="project.html">Back To Top</a>
+                    <a href="#top">Back To Top</a>
                 </li>
             </ul>
-            <h4><a href="bonus.html">Bonus content Page</a></h4>
-
+            <p>
+                <a href="bonus.html">Bonus Content Page</a>
+            </p>
         </nav>
     </footer>
+
 </body>
 
 </html>
