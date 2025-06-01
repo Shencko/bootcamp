@@ -19,7 +19,7 @@ Our improvements included:
 |-------------------|---------------------|
 | **Emmanuel** | Set up project structure, refactored HTML , and coordinated final styling touches. |
 | **Carmen Fregoso** | Designed and implemented the main CSS stylesheet, using semantic tags,  added variables, and implemented CSS animation and ensured consistency across files. |
-| **Werka Ai** | Managed GitHub repository, handled version control, commits, and final project submission. Also suggested some nice CSS colors.. |
+| **Werka Ai** | Managed GitHub repository, handled version control, commits, and also suggested some nice CSS colors.. |
 
 > _Note: All members contributed to discussions and reviews to ensure a collaborative team effort._
 
